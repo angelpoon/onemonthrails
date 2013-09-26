@@ -1,21 +1,23 @@
-<h1>Listing pins</h1>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
 
-  <tbody>
-  <%= render @pins %>
-  </tbody>
-</table>
+ <h1>Listing pins</h1>
 
-<br />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Description</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
 
-<%= link_to 'New Pin', new_pin_path %>
+        <tbody>
+            <%= render @pins %>
+        </tbody>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Pin', new_pin_path %>
